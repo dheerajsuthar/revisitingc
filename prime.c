@@ -3,7 +3,8 @@
 #include <string.h>
 #include <stdbool.h>
 
-// If bool not present. Warning: causes issue with bool as default enum size is int.
+// If bool not present (pre C98). 
+// Warning: causes issue with memset as default enum size is int.
 // typedef enum
 // {
 //     false,
